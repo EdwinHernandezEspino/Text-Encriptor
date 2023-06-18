@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang = "es">
+
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE-edge"/>
+        <meta name = "viewport" content = "width = device-width, initial-scale=1.0">
+        <title>Challenge Encriptador</title>
+        <link rel = "stylesheet" href = "reset.css">
+        <link rel = "stylesheet" href = "style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Genos:wght@100&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="contenedor">
+                <div class="circulo-gris">
+                    <p class="letra">
+                        a
+                    </p>
+                </div>
+                <div class="logo">
+                    <p>
+                        Encriptador Security
+                    </p>
+                </div>  
+                
+                <div class="iconos">
+                    <a href = "https://www.linkedin.com/in/edwin-hern%C3%A1ndez-espino-sd/"><input class = "btnLinkedin" id = "btnLinkedin" type = "button" value = ""></a>
+                    <a href = "https://www.instagram.com/edwin_hes/?next=%2F"><input class = "btnInstagram" id = "btnInstagram" type = "button" value = ""></a>
+                    <a href = "https://www.facebook.com/edwin.hernandezespino"><input class = "btnFacebook" id = "btnFacebook" type = "button" value = ""></a>
+                    <a href = "https://github.com/EdwinHernandezEspino"><input class = "btnGit" id = "btnGit" type = "button" value = ""></a>
+                </div>
+
+                <div class="area-encriptador">
+                    <textarea name = "texto" class = "texto" id = "texto" cols = "30" rows = "10" placeholder = "Ingrese el texto..."></textarea>
+                        <div class="aviso">
+                            <img src = "Imagenes/Group.png" alt = "Logotipo de información">
+                            <p>Solo letras minúsculas y sin acentos.</p>
+                        </div>
+                </div>
+
+                <div class="botones">
+                    <input class = "btn-encriptar" id = "btnEncriptar" type = "button" onclick = "encriptar()" value = "Encriptar">
+                    <audio id = "myAudio">
+                        <source src = "Audio/iphone-notificacion-.mp3" type="audio/mpeg">
+                    </audio>
+                    <input class = "btn-desencriptar" id = "btnDesencriptar" type = "button" onclick = "desencriptar()" value = "Desencriptar">
+                </div>
+
+                <div class="area-resultado">
+                    <img src = "imagenes/esperar.png" alt = "Icono de esperar" id = "aviso-esperar">
+                    <textarea name = "mensaje" id = "mensaje" cols = "30" rows = "10" class = "mensaje"></textarea>
+                    <div class = "mensaje-encriptado" id = "mensaje-encriptado">
+                        <h2 id = "titulo-mensaje">Ningún mensaje fue encontrado</h2>
+                        <p id = "parrafo">Ingresa el texto que desees encriptar o desencriptar</p>
+                    </div>
+                </div>
+
+                <div class="boton-copy">
+                    <input class = "btn-copiar" id = "btn-copiar" type = "button" onclick = "copiar()" value = "Copiar">
+                    <audio id = "Audio">
+                        <source src = "Audio/huawei-bongo-ringtones.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+
+                <div class="autor">
+                    <p class = "copyright">&copy Copyright Encriptador desarrollado por Edwin Hdez - 2023</p>
+                </div>
+        </div>
+    </body>
+    <script src = "index.js"></script>
+</html>
